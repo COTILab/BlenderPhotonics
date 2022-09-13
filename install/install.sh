@@ -27,8 +27,8 @@ BLENDERVER=`blender -v | grep -oh '\b[0-9]\+\.[0-9]\+'`               # obtain b
 BLENDERADDON="$HOME/.config/blender/$BLENDERVER/scripts/addons"       # get blender addon folder
 mkdir -p "$BLENDERADDON"                                              # create addon folder
 cd "$BLENDERADDON"
-wget "$GH/COTILab/BlenderPhotonics/releases/download/v2022pre/BlenderPhotonics-v2022preview.zip"
-unzip BlenderPhotonics-v2022preview.zip                               # install addon
+wget "$GH/COTILab/BlenderPhotonics/archive/refs/tags/v2022pre.zip"
+unzip v2022pre.zip                                                    # install addon
 #================================================================================================
 # verification
 #================================================================================================
