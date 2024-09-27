@@ -5,7 +5,7 @@
 # installing software and python modules and their dependencies
 # (replace "apt" in the line below by "yum" on Fedora Linux, or "port" on Mac OS)
 #================================================================================================
-sudo apt install 'blender' 'octave' 'wget' 'unzip'                    # install software
+sudo apt install -y 'blender' 'octave' 'wget' 'unzip'                    # install software
 BPY=`blender -b --python-expr 'import sys;print(sys.executable)'|grep 'python'` #blender's python
 BLENDERVER=`blender -v | grep -oh '\b[0-9]\+\.[0-9]\+'`               # obtain blender version
 if [[ BLENDERVER = 2* ]]; then                                 # Python 2.x, use -m pip install
